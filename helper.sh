@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
-tmpdir=$(mktemp -d)
-
-cleanup() {
-  rm -rf "$tmpdir/"
-}
-trap cleanup EXIT
 
 echo "arch-conf-scripts helper"
 echo "Choose what to do:"
