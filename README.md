@@ -1,5 +1,6 @@
 # arch-conf-scripts
 For post-install fixes and configuration of Arch Linux
+
 Do NOT run on any other Linux distro!
 
 ### How to run this script
