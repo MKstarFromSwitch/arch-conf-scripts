@@ -18,7 +18,16 @@ makepkg -si
 echo
 echo "Cleaning up..."
 cd ~
-sudo pacman -Rns --noconfirm $(pacman -Qdtq)
+read -rp "Remove orphaned packages? [y/N]: " cleanup
+if [[ "$cleanup" =~ ^[Yy]$ ]]; then
+   orphans=$(pacman -Qdtq || true)
+   if [[ -n "$orphans" ]]; then
+       sudo pacman -Rns $orphans
+   else
+       echo "No orphaned packages."
+   fi
+fi
+
 sudo rm -rf ~/yay/
 echo
 echo "Install complete!"
