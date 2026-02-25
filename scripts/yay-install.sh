@@ -5,7 +5,7 @@ echo "Arch Linux yay installer"
 read -p "Press ENTER to install yay..." -s
 echo
 echo "Installing dependencies..."
-sudo pacman -Syyu
+sudo pacman -Syu
 sudo pacman -S --needed base-devel
 sudo pacman -S --noconfirm git
 echo
