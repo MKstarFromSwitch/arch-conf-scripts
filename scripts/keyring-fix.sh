@@ -15,7 +15,7 @@ echo "Deleting existing keyring..."
 sudo rm -rf /etc/pacman.d/gnupg
 sudo mkdir -p /etc/pacman.d/gnupg
 
-echo "Making new keyring..."
+echo "Creating new keyring..."
 sudo pacman-key --init
 sudo pacman-key --populate archlinux
 echo
