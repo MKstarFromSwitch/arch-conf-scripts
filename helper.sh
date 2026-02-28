@@ -15,12 +15,10 @@ case "$option" in
     1)
      echo "Fetching and running yay installer..."
      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MKstarFromSwitch/arch-conf-scripts/HEAD/scripts/yay-install.sh)"
-     exit 0
      ;;
     2)
      echo "Fetching and running keyring fix..."
      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/MKstarFromSwitch/arch-conf-scripts/HEAD/scripts/keyring-fix.sh)"
-     exit 0
      ;;
     *)
      echo "Invalid option."
