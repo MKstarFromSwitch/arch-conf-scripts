@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-OWNUSER="$USER"
 
 echo "Arch Linux yay installer"
 read -p "Press ENTER to install yay..." -s
@@ -11,8 +10,7 @@ sudo pacman -S --noconfirm git
 echo
 echo "Installing yay... (If it asks for your password, enter it)"
 cd ~
-sudo git clone https://aur.archlinux.org/yay.git
-sudo chown -R $OWNUSER:users yay
+git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 echo
