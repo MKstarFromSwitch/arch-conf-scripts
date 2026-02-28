@@ -26,3 +26,6 @@ case "$option" in
      ;;
 esac
 
+echo
+echo "Done!"
+exit 0
