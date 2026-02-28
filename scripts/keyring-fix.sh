@@ -8,7 +8,7 @@ if [[ $EUID -eq 0 ]]; then
 fi
 
 echo "Arch Linux keyring fix"
-read -p "Press ENTER to fix the keyring..."
+read -rp "Press ENTER to fix the keyring..."
 echo
 echo "Deleting existing keyring..."
 
